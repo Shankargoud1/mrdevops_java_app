@@ -54,9 +54,9 @@ pipeline{
     //         steps{
     //            script{
                    
-    //                def SonarQubecredentialsId = 'sonarqube-api'
+    //                def  withSonarQubeEnv(credentialsId: 'sonarqube') 
     //                statiCodeAnalysis(SonarQubecredentialsId)
-    //            }
+    //            
     //         }
     //     }
     //     stage('Quality Gate Status Check : Sonarqube'){
@@ -64,7 +64,7 @@ pipeline{
     //         steps{
     //            script{
                    
-    //                def SonarQubecredentialsId = 'sonarqube-api'
+    //                def  withSonarQubeEnv(credentialsId: 'sonarqube') 
     //                QualityGateStatus(SonarQubecredentialsId)
     //            }
     //         }
