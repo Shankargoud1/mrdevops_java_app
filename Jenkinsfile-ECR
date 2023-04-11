@@ -54,7 +54,7 @@ pipeline{
              steps{
                 script{
                  
-                    def  withSonarQubeEnv(credentialsId:'sonarqube') 
+                    def  withSonarQubeEnv(credentials:'sonarqube') 
                     statiCodeAnalysis(SonarQubecredentialsId)
                 
              }
